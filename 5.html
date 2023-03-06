@@ -1,0 +1,370 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="2.css">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCAPAN</title>
+</head>
+<style>
+    
+    @font-face {
+        font-family: "january";
+        src: url("january_shine/January\ Shine.ttf");
+    }
+    @font-face {
+        font-family: "caviaritalic";
+        src: url("january_shine/CaviarDreams_BoldItalic.ttf");
+    }
+    @font-face {
+        font-family: "caviarbold";
+        src: url("january_shine/CaviarDreams_Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "santay";
+        src: url("january_shine/Sanseriffic.otf");
+    }
+    
+    div.konten{
+        width: 100%;
+        height: 100%;
+        max-width: 1024px;
+        max-height: 1024px;
+        min-width: 790px;
+        min-height: 1024px;
+        
+    }
+    div.gambar {
+        position: absolute;
+            display: flex;
+            justify-content: center;
+            background:linear-gradient(rgb(115, 128, 115),rgb(7, 109, 2));
+            padding: 300px 651px;
+            background-size: cover;
+            background-position: no-repeat;
+    }
+    div.gambar .musik{
+        position:fixed;
+    }
+    
+    div.atas{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    div.gorang {
+        position: absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./foto3.png);
+        left: 34%;
+        top: 18%;
+        width: 50vh;
+        height: 65vh;
+        background-size: cover;
+        background-position: no-repeat;
+    }
+   
+    div.atas .teksundangan {
+            position:absolute;
+            display: flex;  
+            justify-content:center;
+            left: 41%;
+            font-size: 3em;
+            margin-top: 2%;
+            font-family:'caviarbold';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    } 
+    div.atas .orangnikah {
+            position:absolute;
+            display: flex;
+            margin-top: 6.5%;  
+            justify-content:center;
+            align-items: center;
+            left: 50%;
+            font-size:2.5em;
+            font-family:'january';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    } 
+    div.atas .get{
+            position:absolute;
+            display: flex;
+            margin-top: 18%;  
+            justify-content:center;
+            left: 15%;
+            font-size:8em;
+            font-family:'january';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    } 
+    div.atas .maried{
+            position:absolute;
+            display: flex;
+            margin-top: 18%;  
+            justify-content:center;
+            left: 90%;
+            font-size:8em;
+            font-family:'january';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    } 
+    div.atas .coretan1 {
+            position:absolute;
+            display: flex;
+            margin-top: 29%;  
+            justify-content:center;
+            align-items: center;
+            left: 96%;
+            font-size:2.5em;
+            font-family:'january';
+            color: rgb(209, 173, 55);
+            text-decoration: none;
+    }
+    div.atas .coretan2 {
+            position:absolute;
+            display: flex;
+            margin-top: 29%;  
+            justify-content:center;
+            align-items: center;
+            left: 26%;
+            font-size:2.5em;
+            font-family:'january';
+            color: rgb(209, 173, 55);
+            text-decoration: none;
+    }
+    div.atas .tanggal {
+            position:absolute;
+            display: flex;  
+            justify-content:center;
+            left: 51%;
+            font-size: 2em;
+            margin-top: 54%;
+            font-family:'sans-serif';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    }
+    div.atas .tanggal1 {
+            position:absolute;
+            display: flex;  
+            justify-content:center;
+            left: 56%;
+            font-size: 1.5em;
+            margin-top: 52%;
+            font-family:'sans-serif';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    }
+    div.garistipis {
+        position: absolute;
+        background: linear-gradient(to top, #006600 0%, rgb(209, 173, 55) 105%);
+        top: 600px;
+        padding: 500px 651px;
+        
+    }
+    div.invite {
+        position: relative;
+        display: flex;
+        justify-content: center;    
+    }
+    div.invite .you{
+        position:absolute;
+        left: 445px;
+        top:  600px;
+        color: rgb(0, 0, 0);
+        font-family: 'january';
+        font-size: 480%; 
+        text-decoration: none;
+    }
+    div.invite .mail1 {
+        position:absolute;
+        background-repeat: no-repeat;
+        background-size:100%;
+        margin-top:60%;
+        height: 90px;
+        width: 90px;
+        margin-left: 75%;
+        -webkit-transform: rotate(360deg);
+        
+    }
+    div.invite .mail2 {
+        position:absolute;
+        background-repeat: no-repeat;
+        background-size:100%;
+        height: 90px;
+        width: 90px;
+        margin-top:60.5%;
+        left: 35.5%;
+    }
+    
+    div.kotak {
+        position: relative;
+        display: flex;
+    }
+    div.kotak  .garispanjang1{
+        position: absolute;
+        top: 760px;
+        left: 30%;
+        background:linear-gradient(rgb(7, 109, 2),rgb(0, 255, 153));
+        justify-content: center;
+        padding: 400px 330px;
+        border: none;
+        border-radius: 8px;
+    } 
+    div.kotak .pesan {
+        position:absolute;
+        margin-left:30%;
+        margin-top: 75%;
+        
+    } 
+    div.kotak  .garispanjang2{
+        position: absolute ;
+        justify-content: center;
+        border:none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: 'santuy';
+        font-size: 150%;
+        top: 705px;
+        left: 30%;
+        background-color: rgb(8, 148, 31);
+        padding: 7px 185px;
+        display: flex;
+        color: white;
+    } 
+    div.kotak  .garispanjang2:hover {
+        background-color: rgba(7, 109, 2);
+        transition: 1s;
+        animation-duration: 1s;
+        transition-delay: 0.4s;
+    }
+    div.kotak .navbar{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(216, 140, 40);
+        width: 70vh;
+        height: 10vh;
+        left: 30%;
+        border-radius: 10px;
+        margin-top: 88vh;
+    }
+    div.kotak .back{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 9vh;
+        height: 9vh;
+        left: 45%;
+        margin-top: 78vh;
+        background-color: rgb(216, 140, 40);
+        border-radius: 5px;
+    }
+    div.kotak .nav1{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 8vh;
+        height: 8vh;
+        left: 31%;
+        border-radius: 10px;
+        margin-top: 89vh;
+    }
+    div.kotak .nav2{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 8vh;
+        height: 8vh;
+        left: 40.5%;
+        border-radius: 10px;
+        margin-top: 89.5vh;
+    }div.kotak .nav3{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 8vh;
+        height: 8vh;
+        left: 50%;
+        border-radius: 10px;
+        margin-top: 89vh;
+    }
+    div.kotak .nav4{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 12vh;
+        height: 12vh;
+        left: 58%;
+        margin-top: 88vh;
+        color: black;
+    }
+
+</style>
+<body>
+    <div class="konten">
+        <div class="gambar">
+            <audio autoplay class="musik">
+                <source src="./keroncong asyik.mp3" type="audio/mp3">      
+              </audio>
+        </div>
+        <div class="gorang">
+        </div>
+        <div class="atas">
+            <a class="teksundangan">Our` Message Box</a>
+           <a class="orangnikah">
+                Laki-laki & Perempuan
+           </a>
+            <a class="get">Kotak</a>
+            <a class="coretan1">Kotakdan</a>
+            <a class="maried">Pesan</a>
+            <a class="coretan2">Pesandan</a>
+            <a class="tanggal">
+                19 & 22 Mei 2022
+            </a>
+            <a class="tanggal1">
+                Jumat & Sabtu
+            </a>
+        </div>
+        <div class="garistipis">
+        </div>
+        <div class="invite">
+            <a class="you">~Kirimkan Pesan~</a>  
+            <img src="./whise.png" class="mail1">
+            <img src="./whise.png" class="mail2">
+        </div>
+        <div class="kotak">
+            <a class="garispanjang1"></a>
+            <iframe class="pesan" src="https://docs.google.com/forms/d/e/1FAIpQLSebp45Ko4qdpxg-g-H06HVxG1U4RU1cveJyCYaqXpYqlE7oNg/viewform?embedded=true"
+             width="640" height="760" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+             <a class="garispanjang2" href="formpesan.php">Kirimkan Ucapan / Doa Restu</a>
+
+            <div class="navbar"></div>
+            <a href="./4.html">
+                <img src="./back.png" class="back">
+            </a>
+            <a href="1.html">
+                <img src="./email.png" class="nav1">
+            </a>
+            <a href="./3.html">
+                <img src="./hand-in-hand.png" class="nav2">
+            </a>
+            <a href="4.html">
+                <img src="./camera.png" class="nav3">
+            </a>
+            <a href="#">
+                <img src="./whise.png" class="nav4">
+            </a>
+            </div>
+
+    </div>
+    <div class="caraousel">
+    </div>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+</body>
+</html>

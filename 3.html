@@ -1,0 +1,577 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="2.css">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIAPA MENIKAH</title>
+</head>
+<style>
+    
+    @font-face {
+        font-family: "january";
+        src: url("january_shine/January\ Shine.ttf");
+    }
+    @font-face {
+        font-family: "caviaritalic";
+        src: url("january_shine/CaviarDreams_BoldItalic.ttf");
+    }
+    @font-face {
+        font-family: "caviarbold";
+        src: url("january_shine/CaviarDreams_Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "santay";
+        src: url("january_shine/Sanseriffic.otf");
+    }
+    
+    div.konten{
+        width: 100%;
+        height: 100%;
+        max-width: 1024px;
+        max-height: 1024px;
+        min-width: 790px;
+        min-height: 1024px;
+        
+    }
+    div.gambar {
+        position: absolute;
+            display: flex;
+            justify-content: center;
+            background:linear-gradient(rgb(115, 128, 115),rgb(7, 109, 2));
+            padding: 300px 651px;
+            background-size: cover;
+            background-position: no-repeat;
+    }
+    div.gambar .musik{
+        position:fixed;
+    }
+    
+    div.atas{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    div.gorang {
+        position: absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./foto3.png);
+        left: 34%;
+        top: 18%;
+        width: 50vh;
+        height: 65vh;
+        background-size: cover;
+        background-position: no-repeat;
+    }
+   
+    div.atas .teksundangan {
+            position:absolute;
+            display: flex;  
+            justify-content:center;
+            left: 39%;
+            font-size: 3em;
+            margin-top: 2%;
+            font-family:'caviarbold';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    } 
+    div.atas .orangnikah {
+            position:absolute;
+            display: flex;
+            margin-top: 6.5%;  
+            justify-content:center;
+            align-items: center;
+            left: 50%;
+            font-size:2.5em;
+            font-family:'january';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    } 
+    div.atas .get{
+            position:absolute;
+            display: flex;
+            margin-top: 19%;  
+            justify-content:center;
+            left: 6%;
+            font-size:8em;
+            font-family:'january';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    } 
+    div.atas .maried{
+            position:absolute;
+            display: flex;
+            margin-top: 19%;  
+            justify-content:center;
+            left: 86%;
+            font-size:8em;
+            font-family:'january';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    } 
+    div.atas .tanggal {
+            position:absolute;
+            display: flex;  
+            justify-content:center;
+            left: 50%;
+            font-size: 2em;
+            margin-top: 54%;
+            font-family:'sans-serif';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    }
+    div.atas .coretan1 {
+            position:absolute;
+            display: flex;
+            margin-top: 30%;  
+            justify-content:center;
+            align-items: center;
+            left: 21%;
+            font-size:2.5em;
+            font-family:'january';
+            color: rgb(209, 173, 55);
+            text-decoration: none;
+    }
+    div.atas .coretan2 {
+            position:absolute;
+            display: flex;
+            margin-top: 30%;  
+            justify-content:center;
+            align-items: center;
+            left: 91%;
+            font-size:2.5em;
+            font-family:'january';
+            color: rgb(209, 173, 55);
+            text-decoration: none;
+    }
+    div.atas .tanggal1 {
+            position:absolute;
+            display: flex;  
+            justify-content:center;
+            left: 55%;
+            font-size: 1.5em;
+            margin-top: 52%;
+            font-family:'sans-serif';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    }
+    div.garistipis {
+        position: absolute;
+        background:linear-gradient(rgb(104, 99, 99),rgb(255, 255, 255));
+        top: 600px;
+        padding: 460px 651px;
+        
+    }
+    
+    div.invite {
+        position: relative;
+        display: flex;
+        justify-content: center;    
+    }
+    div.invite .you{
+        position:absolute;
+        left: 365px;
+        top:  625px;
+        color: rgb(255, 255, 255);
+        font-family: 'january';
+        font-size: 360%; 
+        text-decoration: none;
+    }
+    div.invite .mail1 {
+        position:absolute;
+        background-repeat: no-repeat;
+        background-size:100%;
+        margin-top:63%;
+        height: 50px;
+        width: 50px;
+        margin-left: 84%;
+        
+    }
+    div.invite .mail2 {
+        position:absolute;
+        background-repeat: no-repeat;
+        background-size:100%;
+        height: 50px;
+        width: 50px;
+        margin-top: 63%;
+        margin-right: 35%;
+        
+    }
+    div.kotak {
+        position: relative;
+        display: flex;
+    }
+    div.kotak  .garispanjang1{
+        position: absolute;
+        top: 740px;
+        left: 31.5%;
+        justify-content: center;
+        padding: 380px 315px;
+        border-radius: 10px;
+        border: 3px solid rgb(248, 205, 126);
+        background:linear-gradient(rgb(7, 109, 2), rgb(5, 204, 121));
+    }
+    div.kotak .godong{
+        position: absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./pohon_2-removebg-preview.png);
+        left: 34%;
+        margin-top: 72.5%;
+        width: 50vh;
+        height: 25vh;
+        background-size: 120%;
+        background-position: no-repeat;
+    }
+    div.kotak .godong1{
+        position: absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./pohon_2-removebg-preview.png);
+        left: 25%;
+        margin-top: 72.5%;
+        width: 50vh;
+        height: 25vh;
+        background-size: 120%;
+        background-position: no-repeat;
+    }
+    div.kotak .godong2{
+        position: absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./pohon_2-removebg-preview.png);
+        left: 50%;
+        margin-top: 72.5%;
+        width: 50vh;
+        height: 25vh;
+        background-size: 120%;
+        background-position: no-repeat;
+    }
+    div.kotak .godong3{
+        position: absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./pohon_2-removebg-preview.png);
+        left: 62%;
+        margin-top: 72.5%;
+        width: 50vh;
+        height: 25vh;
+        background-size: 120%;
+        background-position: no-repeat;
+    }
+    div.kotak .godongbawah{
+        position: absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./mawar.png);
+        left: 47%;
+        margin-top: 116%;
+        width: 45vh;
+        height: 45vh;
+        background-size: 100%;
+        background-position: no-repeat;
+    }
+    div.kotak .godong5{
+        position: absolute;
+        display:flex;
+        justify-content: center;
+        -webkit-transform: rotate(180deg);
+        align-items: center;
+        background-image: url(./pohon_2-removebg-preview.png);
+        left: 32%;
+        margin-top: 128%;
+        width: 50vh;
+        height: 25vh;
+        background-size: 100%;
+        background-position: no-repeat;
+    }
+    div.kotak .godong6{
+        position: absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./pohon_2-removebg-preview.png);
+        left: 62%;
+        margin-top: 132%;
+        width: 50vh;
+        height: 25vh;
+        background-size: 120%;
+        background-position: no-repeat;
+    }
+    div.kotak .godong4{
+        position: absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-transform: rotate(180deg);
+        background-image: url(./pohon_2-removebg-preview.png);
+        left: 48%;
+        margin-top: 127%;
+        width: 50vh;
+        height: 25vh;
+        background-size: 120%;
+        background-position: no-repeat;
+    }
+    div.kotak .ring{
+        position:absolute;
+        background-image: url(./wedding-rings.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100px;
+        height: 100px;
+        left: 66%;
+        margin-top: 100%;
+        margin-bottom: 100px;
+        
+    } 
+    div.kotak .nama1 {
+        display: flex;
+        justify-content: start;
+        position:absolute;
+        font-size: 700%;
+        font-family: 'january';
+        color: rgb(255, 255, 255);
+        left: 480px;
+        padding-right: 20px;
+        text-decoration: none;
+        margin-top: 81%;
+    }
+    div.kotak .nama2 {
+        display: flex;
+        justify-content: start;
+        position:absolute;
+        font-size: 100%;
+        font-family: 'caviaritalic';
+        color:rgb(0, 0, 0);
+        left: 540px;
+        padding-right: 20px;
+        text-decoration: none;
+        margin-top: 95%;
+    }
+    div.kotak .nama3 {
+        display: flex;
+        justify-content: start;
+        position:absolute;
+        font-size: 100%;
+        font-family: 'caviaritalic';
+        color:rgb(0, 0, 0);
+        left: 615px;
+        padding-right: 20px;
+        text-decoration: none;
+        margin-top: 97%;
+    }
+    div.kotak .namadengan {
+        display: flex;
+        justify-content: start;
+        position:absolute;
+        font-size: 450%;
+        font-family: 'january';
+        color: rgb(73, 50, 2);
+        left: 530px;
+        padding-right: 20px;
+        text-decoration: none;
+        margin-top: 100%;
+    }
+    div.kotak .nama4 {
+        display: flex;
+        justify-content: start;
+        position:absolute;
+        font-size: 700%;
+        font-family: 'january';
+        color: rgb(255, 255, 255);
+        left: 480px;
+        padding-right: 20px;
+        text-decoration: none;
+        margin-top: 107%;
+    }
+    div.kotak .nama5 {
+        display: flex;
+        justify-content: start;
+        position:absolute;
+        font-size: 100%;
+        font-family: 'caviaritalic';
+        color:rgb(0, 0, 0);
+        left: 540px;
+        padding-right: 20px;
+        text-decoration: none;
+        margin-top: 120%;    
+    }
+    div.kotak .nama6 {
+        display: flex;
+        justify-content: start;
+        position:absolute;
+        font-size: 100%;
+        font-family: 'caviaritalic';
+        color:rgb(0, 0, 0);
+        left: 615px;
+        padding-right: 20px;
+        text-decoration: none;
+        margin-top: 122%;
+    }
+    div.kotak .waktu{
+        position:absolute;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 500px;
+        height: 700px;
+        left: 72%;
+        border: none;
+        margin-top: 75%;
+        margin-bottom: 100px;
+        border-radius: 10px;
+    } 
+    div.kotak .waktulokasi {
+        display: flex;
+        position:absolute;
+        font-size: 600%;
+        font-family: 'january';
+        color: rgb(255, 255, 255);
+        left: 85%;
+        padding-right: 20px;
+        text-decoration: none;
+        margin-top: 75%;
+    }   
+    div.kotak .navbar{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(216, 140, 40);
+        width: 70vh;
+        height: 10vh;
+        left: 30%;
+        border-radius: 10px;
+        margin-top: 88vh;
+    }
+    div.kotak .back{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 9vh;
+        height: 9vh;
+        left: 45%;
+        margin-top: 78vh;
+        background-color: rgb(216, 140, 40);
+        border-radius: 5px;
+    }
+    div.kotak .nav1{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 8vh;
+        height: 8vh;
+        left: 31%;
+        border-radius: 10px;
+        margin-top: 89vh;
+    }
+    div.kotak .nav2{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 8vh;
+        height: 8vh;
+        left: 40.5%;
+        border-radius: 10px;
+        margin-top: 89.5vh;
+    }div.kotak .nav3{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 8vh;
+        height: 8vh;
+        left: 50%;
+        border-radius: 10px;
+        margin-top: 89vh;
+    }
+    div.kotak .nav4{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 12vh;
+        height: 12vh;
+        left: 58%;
+        margin-top: 88vh;
+        color: black;
+    }
+</style>
+<body>
+    <div class="konten">
+        <div class="gambar">
+            <audio autoplay class="musik">
+                <source src="" type="audio/mp3">      
+              </audio>
+        </div>
+        <div class="gorang">
+        </div>
+        <div class="atas">
+            <a class="teksundangan">We`re Getting Maried</a>
+           <a class="orangnikah">
+           </a>
+            <a class="get">Laki-laki</a>
+            <a class="coretan1">Sekarangdan</a>
+            <a class="coretan2">Esokpraspra</a>
+            <a class="maried">Perempuan</a>
+            <a class="tanggal">
+                19 & 22 Mei 2022
+            </a>
+            <a class="tanggal1">
+                Jumat & Sabtu
+            </a>
+        </div>
+        <div class="garistipis">
+        </div>
+        <div class="invite">
+            <a class="you">Kami Nikahkan Putra dan Purti</a>  
+            <img src="./hand-in-hand.png" class="mail1">
+            <img src="./hand-in-hand.png" class="mail2">
+        </div>
+        <div class="kotak">
+            <a class="garispanjang1"></a>
+            <a class="nama1">Laki-laki</a>
+            <a class="nama2">Putra dari Bapak _ dan</a>
+            <a class="nama3">Ibu _</a>
+            <a class="namadengan">Dengan</a>
+            <a class="nama4">Perempuan</a>
+            <a class="nama5">Putra dari Bapak _ dan</a>
+            <a class="nama6">Ibu _</a>
+            <a class="ring"></a>
+            <a class="godong"></a>
+            <a class="godong1"></a>
+            <a class="godong2"></a>
+            <a class="godong3"></a>
+            <a class="godongbawah"></a>
+            <a class="godong4"></a>
+            <a class="godong5"></a>
+            <a class="godong6"></a>
+
+            <div class="navbar"></div>
+            <a href="./2.html">
+                <img src="./back.png" class="back">
+            </a>
+            <a href="2.html">
+                <img src="./email.png" class="nav1">
+            </a>
+            <a href="./#">
+                <img src="./hand-in-hand.png" class="nav2">
+            </a>
+            <a href="./4.html">
+                <img src="./camera.png" class="nav3">
+            </a>
+            <a href="./5.html">
+                <img src="./whise.png" class="nav4">
+            </a>
+            </div>
+    </div>
+    <div class="caraousel">
+    </div>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+</body>
+</html>

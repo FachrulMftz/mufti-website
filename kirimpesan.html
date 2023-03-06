@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <?php
+//membuat varibale agar bisa terkoneksi  server mysqli phpmyadmin
+$servername = "localhost";
+$database = "coba";
+$username = "root";
+$password = "fachrulmufti23";
+
+//membuat koneksi
+$conn = mysqli_connect($servername, $username, $password, $database); //mengkoneksikan ke server msqli atau database dengan aturan (variable)
+ 
+if (!$conn){
+    die("Koneksi ke database GAGAL: " . mysqli_connect_error()); //jika koneksi gagal akan mengembalikan kesalahan dari koneksi terakhir atau gagal
+}
+echo "Koneksi Berhasil (mufti23)<br>"; //untuk menampilkan text 
+
+if (empty($_POST ["nama"])) {
+    //script form isian ,jika 
+
+    //menampilkan tabel form data akan akan di input
+    echo " 
+    <form method='POST' action'#' name='simpandata'> 
+    <table>
+        <tr><td colspan='2'>Form Isian Data</td></tr>
+        <tr><td>Nama</td><td><input type='text' name='nama' autocomplete='off' placeholder='Ketik Nama !'></td></tr>
+        <tr><td>NIP</td><td><input type='text' name='nip' autocomplete='off' placeholder='Ketik Nip !'></td></tr>
+        <tr><td>Status</td><td><input type='text' name='status' autocomplete='off' placeholder='Ketik Status !'></td></tr>
+        <tr><td>Jenis Kelamin</td><td><select name='sex'><option>--Pilih--</option><option value='Laki-Laki'>L</option><option value='Perempuan'>P</td></option></select></td></tr>
+        <tr><td colspan='2'><input type='submit' name='simpan' value='SIMPAN'></td></tr>
+    </table>
+    </form>";
+}else{ //apabila variable berikut 
+    //script menyimpan data inputan
+    $inputnama = $_POST["nama"]; //data nama akan dikirim langsung ke action tanpa menampilkan pada URL dinyatakan $inputnama
+    $inputnip = $_POST["nip"]; //data nip akan dikirim langsung ke action tanpa menampilkan pada URL dinyatakan $inputnip
+    $inputstatus = $_POST["status"]; //data statys akan dikirim langsung ke action tanpa menampilkan pada URL dinyatakan $inputstatus
+    $inputjenis = $_POST ["sex"] ; //data sex akan dikirim langsung ke action tanpa menampilkan pada URL dinyatakan $inputsex
+    $input = "INSERT INTO user (nama,nip,status,sex) VALUES ('$inputnama','$inputnip','$inputstatus','$inputjenis')"; 
+    //kemudian diinput kedalam tabel user dengan nilai sesuai variable yang dibuat sebelumnya
+
+    $query_input = mysqli_query($conn,$input); //untuk menjalankan argumen atau perintah ke $conn(koneksi database) dan $input(simpan input data)
+    if ($query_input){ //jika data inputan berhasil disimpan
+        //maka akan menampilkan data berhasil disimpan
+        echo "<b><i>Data berhasil disimpan...<br>";
+        //dan akan menampilkan link ke file sebelumnya pada form input data
+        echo "<b><i><a href='inputdata.php'>Kembali ke form</a><br>";
+    }else{ //apabila tidak bisa disimpan
+        //maka akan muncul tulisan 'data gagal disimpan'
+        echo "Data GAGAL disimpan.<br>";
+         //dan akan menampilkan link ke file sebelumnya pada form input data
+        echo "<a href='inputdata.php'>Kembali ke form</a><br>";
+    }
+}
+mysqli_close($conn); //untuk menghentikan koneksi ke server mysqli dengan memutus koneksi $conn
+?>
+</body>
+</html>

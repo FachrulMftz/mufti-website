@@ -1,0 +1,375 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="2.css">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERY</title>
+</head>
+<style>
+    
+    @font-face {
+        font-family: "january";
+        src: url("january_shine/January\ Shine.ttf");
+    }
+    @font-face {
+        font-family: "caviaritalic";
+        src: url("january_shine/CaviarDreams_BoldItalic.ttf");
+    }
+    @font-face {
+        font-family: "caviarbold";
+        src: url("january_shine/CaviarDreams_Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "santay";
+        src: url("january_shine/Sanseriffic.otf");
+    }
+    
+    div.konten{
+        width: 100%;
+        height: 100%;
+        max-width: 1024px;
+        max-height: 1024px;
+        min-width: 790px;
+        min-height: 1024px;
+        
+    }
+    div.gambar {
+        position: absolute;
+            display: flex;
+            justify-content: center;
+            background:linear-gradient(rgb(115, 128, 115),rgb(7, 109, 2));
+            padding: 300px 651px;
+            background-size: cover;
+            background-position: no-repeat;
+    }
+    div.gambar .musik{
+        position:fixed;
+    }
+    
+    div.atas{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    div.gorang {
+        position: absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./foto3.png);
+        left: 34%;
+        top: 18%;
+        width: 50vh;
+        height: 65vh;
+        background-size: cover;
+        background-position: no-repeat;
+    }
+   
+    div.atas .teksundangan {
+            position:absolute;
+            display: flex;  
+            justify-content:center;
+            left: 41%;
+            font-size: 3em;
+            margin-top: 2%;
+            font-family:'caviarbold';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    } 
+    div.atas .orangnikah {
+            position:absolute;
+            display: flex;
+            margin-top: 6.5%;  
+            justify-content:center;
+            align-items: center;
+            left: 50%;
+            font-size:2.5em;
+            font-family:'january';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    } 
+    div.atas .get{
+            position:absolute;
+            display: flex;
+            margin-top: 18%;  
+            justify-content:center;
+            left: 15%;
+            font-size:8em;
+            font-family:'january';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    } 
+    div.atas .maried{
+            position:absolute;
+            display: flex;
+            margin-top: 18%;  
+            justify-content:center;
+            left: 88%;
+            font-size:8em;
+            font-family:'january';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    } 
+    div.atas .coretan1 {
+            position:absolute;
+            display: flex;
+            margin-top: 29%;  
+            justify-content:center;
+            align-items: center;
+            left: 94%;
+            font-size:2.5em;
+            font-family:'january';
+            color: rgb(209, 173, 55);
+            text-decoration: none;
+    }
+    div.atas .coretan2 {
+            position:absolute;
+            display: flex;
+            margin-top: 28.7%;  
+            justify-content:center;
+            align-items: center;
+            left: 28%;
+            font-size:2.5em;
+            font-family:'january';
+            color: rgb(209, 173, 55);
+            text-decoration: none;
+    }
+    div.atas .tanggal {
+            position:absolute;
+            display: flex;  
+            justify-content:center;
+            left: 51%;
+            font-size: 2em;
+            margin-top: 54%;
+            font-family:'sans-serif';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    }
+    div.atas .tanggal1 {
+            position:absolute;
+            display: flex;  
+            justify-content:center;
+            left: 56%;
+            font-size: 1.5em;
+            margin-top: 52%;
+            font-family:'sans-serif';
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+    }
+    div.garistipis {
+        position: absolute;
+        background:linear-gradient(rgb(104, 99, 99),rgb(255, 255, 255));
+        top: 600px;
+        padding: 55px 651px;
+        
+    }
+    
+    div.invite {
+        position: relative;
+        display: flex;
+        justify-content: center;    
+    }
+    div.invite .you{
+        position:absolute;
+        left: 460px;
+        top:  590px;
+        color: rgb(0, 0, 0);
+        font-family: 'january';
+        font-size: 560%; 
+        text-decoration: none;
+    }
+    div.invite .mail1 {
+        position:absolute;
+        background-repeat: no-repeat;
+        background-size:100%;
+        height: 50px;
+        width: 50px;
+        margin-top: 61.5%;
+        margin-right: 20%;
+    }
+    div.invite .mail2 {
+        position:absolute;
+        background-repeat: no-repeat;
+        background-size:100%;
+        margin-top:61%;
+        height: 50px;
+        width: 50px;
+        margin-left: 65%;
+        
+    }
+    
+    div.kotak {
+        position: relative;
+        display: flex;
+    }
+    div.kotak  .garispanjang1{
+        position: absolute;
+        top: 720px;
+        left: 0.9%;
+        border: 3px solid rgb(248, 205, 126);
+        background:linear-gradient(rgb(71, 66, 66),rgb(255, 255, 255));
+        justify-content: center;
+        padding: 320px 640px;
+        border-radius: 8px;
+
+    }
+
+    div.kotak .navbar{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(216, 140, 40);
+        width: 70vh;
+        height: 10vh;
+        left: 30%;
+        border-radius: 10px;
+        margin-top: 88vh;
+    }
+    div.kotak .back{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 9vh;
+        height: 9vh;
+        left: 45%;
+        margin-top: 78vh;
+        background-color: rgb(216, 140, 40);
+        border-radius: 5px;
+    }
+    div.kotak .nav1{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 8vh;
+        height: 8vh;
+        left: 31%;
+        border-radius: 10px;
+        margin-top: 89vh;
+    }
+    div.kotak .nav2{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 8vh;
+        height: 8vh;
+        left: 40.5%;
+        border-radius: 10px;
+        margin-top: 89.5vh;
+    }div.kotak .nav3{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 8vh;
+        height: 8vh;
+        left: 50%;
+        border-radius: 10px;
+        margin-top: 89vh;
+    }
+    div.kotak .nav4{
+        position:fixed;
+        justify-content: center;
+        align-items: center;
+        width: 12vh;
+        height: 12vh;
+        left: 58%;
+        margin-top: 88vh;
+        color: black;
+    }
+    div.kotak .carousel{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        left: 13%;
+        margin-top: 75%;
+    }
+</style>
+<body>
+    <div class="konten">
+        <div class="gambar">
+            <audio autoplay class="musik">
+                <source src="./keroncong asyik.mp3" type="audio/mp3">      
+              </audio>
+        </div>
+        <div class="gorang">
+        </div>
+        <div class="atas">
+            <a class="teksundangan">Our` Galery Photo</a>
+           <a class="orangnikah">
+                Laki-laki & Perempuan
+           </a>
+            <a class="get">We`re</a>
+            <a class="coretan1">Whereka</a>
+            <a class="maried">Photo</a>
+            <a class="coretan2">Photocar</a>
+            <a class="tanggal">
+                19 & 22 Mei 2022
+            </a>
+            <a class="tanggal1">
+                Jumat & Sabtu
+            </a>
+        </div>
+        <div class="garistipis">
+        </div>
+        <div class="invite">
+            <a class="you">Photo Galery</a>  
+            <img src="./camera.png" class="mail1">
+            <img src="./camera.png" class="mail2">
+        </div>
+        <div class="kotak">
+            <a class="garispanjang1"></a>
+            <div id="carouselExampleIndicators" class="carousel">
+                <!-- <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div> -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./merah.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./white.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./grey.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+            <div class="navbar"></div>
+            <a href="./3.html">
+        
+            <img src="./back.png" class="back">
+            </a>
+            <a href="1.html">
+                <img src="./email.png" class="nav1">
+            </a>
+            <a href="./3.html">
+                <img src="./hand-in-hand.png" class="nav2">
+            </a>
+            <a href="#">
+                <img src="./camera.png" class="nav3">
+            </a>
+            <a href="./5.html">
+                <img src="./whise.png" class="nav4">
+            </a>
+            </div>
+        </div>
+    <div class="caraousel">
+    </div>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+</body>
+</html>
