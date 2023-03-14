@@ -1,6 +1,5 @@
 <html>
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="2.css">
     <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,7 +59,7 @@
         justify-content: center;
         align-items: center;
         background-image: url(./foto3.png);
-        left: 34%;
+        left: 36%;
         top: 18%;
         width: 50vh;
         height: 65vh;
@@ -163,68 +162,60 @@
         position: absolute;
         background:linear-gradient(rgb(104, 99, 99),rgb(255, 255, 255));
         top: 600px;
-        padding: 55px 651px;
+        padding: 450px 651px;
         
     }
     
     div.invite {
-        position: relative;
-        display: flex;
-        justify-content: center;    
+        position:relative;
+        justify-content: center;
+        text-align: center;
+        display: flex;    
     }
     div.invite .you{
         position:absolute;
-        left: 460px;
-        top:  590px;
+        text-align: center;
+        left: 220px;
+        top:  650px;
         color: rgb(0, 0, 0);
         font-family: 'january';
-        font-size: 560%; 
+        font-size: 34vh; 
         text-decoration: none;
     }
     div.invite .mail1 {
         position:absolute;
         background-repeat: no-repeat;
         background-size:100%;
-        height: 50px;
-        width: 50px;
-        margin-top: 61.5%;
-        margin-right: 20%;
+        height: 100px;
+        width: 100px;
+        margin-top: 87%;
+        margin-left: 30%;
     }
     div.invite .mail2 {
         position:absolute;
         background-repeat: no-repeat;
         background-size:100%;
-        margin-top:61%;
-        height: 50px;
-        width: 50px;
-        margin-left: 65%;
+        margin-top:75%;
+        height: 100px;
+        width: 100px;
+        margin-left: 120%;
         
     }
-    
+
     div.kotak {
         position: relative;
         display: flex;
     }
-    div.kotak  .garispanjang1{
-        position: absolute;
-        top: 720px;
-        left: 0.9%;
-        border: 3px solid rgb(248, 205, 126);
-        background:linear-gradient(rgb(71, 66, 66),rgb(255, 255, 255));
-        justify-content: center;
-        padding: 320px 640px;
-        border-radius: 8px;
-
-    }
-
+    
     div.kotak .navbar{
         position:fixed;
         justify-content: center;
         align-items: center;
+        z-index: 10;
         background-color: rgb(216, 140, 40);
         width: 70vh;
         height: 10vh;
-        left: 30%;
+        left: 31%;
         border-radius: 10px;
         margin-top: 88vh;
     }
@@ -232,9 +223,10 @@
         position:fixed;
         justify-content: center;
         align-items: center;
+        z-index: 10;
         width: 9vh;
         height: 9vh;
-        left: 45%;
+        left: 46%;
         margin-top: 78vh;
         background-color: rgb(216, 140, 40);
         border-radius: 5px;
@@ -243,9 +235,10 @@
         position:fixed;
         justify-content: center;
         align-items: center;
+        z-index: 10;
         width: 8vh;
         height: 8vh;
-        left: 31%;
+        left: 32%;
         border-radius: 10px;
         margin-top: 89vh;
     }
@@ -253,18 +246,20 @@
         position:fixed;
         justify-content: center;
         align-items: center;
+        z-index: 10;
         width: 8vh;
         height: 8vh;
-        left: 40.5%;
+        left: 41.5%;
         border-radius: 10px;
         margin-top: 89.5vh;
     }div.kotak .nav3{
         position:fixed;
         justify-content: center;
         align-items: center;
+        z-index: 10;
         width: 8vh;
         height: 8vh;
-        left: 50%;
+        left: 51%;
         border-radius: 10px;
         margin-top: 89vh;
     }
@@ -272,23 +267,36 @@
         position:fixed;
         justify-content: center;
         align-items: center;
+        z-index: 10;
         width: 12vh;
         height: 12vh;
-        left: 58%;
+        left: 59%;
         margin-top: 88vh;
         color: black;
     }
-    div.kotak .carousel{
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        left: 13%;
-        margin-top: 75%;
+    div.kodfun-galeri{
+    position: relative;
+    justify-content: center;
+    display:flex;
+    height: 30rem;
+    gap: 1rem;
+    bottom: 4%;
     }
+    div.kodfun-galeri > div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    }
+    div.kodfun-galeri > div:hover{
+    flex: 5;
+    }
+    
 </style>
 <body>
+    
     <div class="konten">
         <div class="gambar">
             <audio autoplay class="musik">
@@ -321,34 +329,7 @@
             <img src="./camera.png" class="mail2">
         </div>
         <div class="kotak">
-            <a class="garispanjang1"></a>
-            <div id="carouselExampleIndicators" class="carousel">
-                <!-- <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div> -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./merah.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./white.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./grey.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            
+
             <div class="navbar"></div>
             <a href="./3.html">
         
@@ -368,8 +349,13 @@
             </a>
             </div>
         </div>
-    <div class="caraousel">
-    </div>
+    <div class="kodfun-galeri">
+            <div style="background-image:url(./prewed3.jpg);"></div>
+            <div style="background-image:url(./@nilamsukma.jpg);"></div>
+            <div style="background-image:url(./prewed.jpg);"></div>
+            <div style="background-image:url(./prewed2.jpg);"></div>
+            <div style="background-image:url(./pantai1.jpg);"></div>
+    </div>   
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 </body>
 </html>
