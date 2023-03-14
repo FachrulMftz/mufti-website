@@ -16,24 +16,25 @@
         <div class="user-details">
           <div class="input-box">
              <label for="NAMA_TAMU" class="form-label">Nama Tamu</label>
-              <input type="text" id="NAMA_TAMU" name="NAMA_TAMU" class="form-control" placeholder="Masukan nama tamu" required>
+              <input type="text" id="NAMA_TAMU" name="NAMA_TAMU" class="form-control" autocomplete="off" placeholder="Masukan nama tamu" required>
           </div>
           <div class="input-box">
             <label for="ALAMAT" class="form-label">Alamat</label>
-             <input type="text" id="ALAMAT" name="ALAMAT" class="form-control" placeholder="Masukan alamat rumah" required>
+             <input type="text" id="ALAMAT" name="ALAMAT" class="form-control" autocomplete="off" placeholder="Masukan alamat rumah" required>
          </div>
           <div class="input-box">
             <label for="EMAIL" class="form-label">Email</label>
-               <input type="email" id="EMAIL" name="EMAIL" class="form-control" placeholder="Masukan email " required>
+               <input type="email" id="EMAIL" name="EMAIL" class="form-control" autocomplete="off" placeholder="Masukan email " required>
            </div>
           <div class="input-box">
             <label for="PESAN" class="form-label">Pesan</label>
-            <textarea type="text" id="PESAN" name="PESAN" class="form-control" placeholder="Masukan pesannya " required></textarea>
+            <textarea type="text" id="PESAN" name="PESAN" class="form-control" autocomplete="off" placeholder="Masukan pesannya " required></textarea>
             </div>
             
         </div>
         <div class="button">
           <input type="submit" value="Kirim Registrasi">
+          <input type="submit" class="back" value="Kembali Ke Undangan" href="5.html">
         </div>
       </form>
     </div>
@@ -53,6 +54,5 @@
             form.reset();
         })
     </script>
-
 </body>
 </html>
