@@ -12,6 +12,7 @@ body{
   align-items: center;
   padding: 10px;
   background: linear-gradient(135deg, #08dab7, #046609);
+  background-repeat:inherit;
 }
 .container{
   max-width: 700px;
@@ -85,7 +86,7 @@ form .input-box span.details{
  }
  form .button{
    height: 45px;
-   margin: 35px 0
+   margin: 35px 0;
  }
  form .button input{
    height: 100%;
@@ -104,11 +105,13 @@ form .input-box span.details{
   background: linear-gradient(65deg, #046609, #08dab7);
   
   }
-  form .button .back{
+
+  .button .submit{
     height: 45px;
-    margin: 15px 0;
+    margin: 15px 40px;
   }
-  form .button input{
+  .button .submit{
+    padding: 0px 400px;
     height: 100%;
     width: 100%;
     border-radius: 5px;
@@ -120,11 +123,22 @@ form .input-box span.details{
     cursor: pointer;
     background: linear-gradient(130deg, #08dab7, #046609);
   }
-  form .button input:hover{
+  .button .submit:hover{
    transform: scale(0.99);
    background: linear-gradient(65deg, #046609, #08dab7);
    
    }
+   .pesan{
+    position: absolute;
+    width: 850px;
+    height: 150px;
+    margin-top: 7.4%;
+    left: 18%;
+    justify-content: center;
+    z-index: 1;
+    display: flex;
+   }
+   
  @media(max-width: 584px){
  .container{
   max-width: 100%;
