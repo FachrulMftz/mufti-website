@@ -6,13 +6,13 @@
   font-family: 'Poppins',sans-serif;
 }
 body{
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
   background: linear-gradient(135deg, #08dab7, #046609);
-  background-repeat:inherit;
+  background-repeat:no-repeat;
 }
 .container{
   max-width: 700px;
@@ -105,12 +105,12 @@ form .input-box span.details{
   background: linear-gradient(65deg, #046609, #08dab7);
   
   }
-
-  .button .submit{
+/*   
+  .kembali .ke{
     height: 45px;
-    margin: 15px 40px;
+    margin: 15px 0;
   }
-  .button .submit{
+  .kembali .ke{
     padding: 0px 400px;
     height: 100%;
     width: 100%;
@@ -123,21 +123,27 @@ form .input-box span.details{
     cursor: pointer;
     background: linear-gradient(130deg, #08dab7, #046609);
   }
-  .button .submit:hover{
+  .kembali .ke:hover{
    transform: scale(0.99);
    background: linear-gradient(65deg, #046609, #08dab7);
    
-   }
-   .pesan{
-    position: absolute;
-    width: 850px;
-    height: 150px;
-    margin-top: 7.4%;
-    left: 18%;
-    justify-content: center;
-    z-index: 1;
+   } */
+   .datapesan {
+    width: 85vw;
+    height: 15vw;
     display: flex;
-   }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .datapesan {
+      width: 90vw;
+      height: 30vw;
+    }
+  }
    
  @media(max-width: 584px){
  .container{
